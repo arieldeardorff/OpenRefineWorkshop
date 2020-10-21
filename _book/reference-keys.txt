@@ -1,1 +1,5 @@
 hello-world
+learning-objectives
+class-data
+pre-class-prep
+introduction
