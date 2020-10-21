@@ -7,5 +7,20 @@ output:
   bookdown::gitbook: default
   
 ---
+# Introduction
+Got messy spreadsheets? Open Refine is a powerful, free, open-source software tool for cleaning and transforming data in a way that is easy to reproduce. This hands-on class is targeted at people who need to clean messy data, including spreadsheets of survey responses, patient encounters, financial records, or workshop attendance. Together we will work through the basics of cleaning data in OpenRefine and also go over some more advanced techniques including pulling in additional data from an API. If you want something more powerful than Excel but don't want to spend the time to learn a programming language like R or Python, OpenRefine could be the perfect tool for you! 
 
-# Hello world
+## Learning Objectives
+
+By the end of the class learners should be able to:  
+* Explain how OpenRefine works on their computer  
+* Use OpenRefine to:  
+    + Facet data to find typos and errors  
+
+## Class Data
+Data for this class was originally pulled from the [National Library of Medicine Dietary Supplements Label Database](https://datadiscovery.nlm.nih.gov/Drugs-and-Supplements/Dietary-Supplements-Label-Database-DSLD-Product-In/wp6t-qxsk). The version we are using has been intentionally “dirtied” to introduce errors and typos.
+
+## Pre-Class Prep
+* [Download OpenRefine](http://openrefine.org/download.html)
+    + Note that depending on your operating system you may also need to download java
+* [Download the two class data files and the worksheet](tiny.ucsf.edu/dsiopenrefine)
