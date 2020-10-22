@@ -3,3 +3,5 @@ learning-objectives
 class-data
 pre-class-prep
 introduction
+welcome
+about-the-instructor

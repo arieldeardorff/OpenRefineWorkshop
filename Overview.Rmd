@@ -1,0 +1,11 @@
+# Getting to Know our Data and Tools
+
+## Exploring the Data 
+
+Open the spreadsheet “NewOpenRefine_Data1.csv” in excel. 
+
+Scenario: You want to learn more about different supplements over time so have downloaded a copy of the National Library of Medicine’s Dietary Supplements Label Database. Before you can start your analysis you want to check for missing/incorrect data. (Note that this copy of the data has been intentionally altered)
+
+## What is Open Refine?
+
+Slides here?
