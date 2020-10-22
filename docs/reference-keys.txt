@@ -1,7 +1,7 @@
 welcome
+pre-class-prep
 learning-objectives
 class-data
-pre-class-prep
 about-the-instructor
 getting-to-know-our-data-and-tools
 exploring-the-data
