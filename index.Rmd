@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Open Refine"
+title: "Introduction to OpenRefine"
 author: "Ariel Deardorff, Data Services Librian, UCSF Library"
 site: bookdown::bookdown_site
 documentclass: book
