@@ -20,3 +20,4 @@ pulling-data-from-an-api
 parsing-data-with-json
 exporting-cleaned-data-and-scripts
 recommended-resources-and-tutorials
+challenge-use-the-split-feature-to-divide-the-date-entered-into-dsld-column-into-two-columns-one-for-date-and-one-for-time.-can-we-conclude-anything-about-the-times
