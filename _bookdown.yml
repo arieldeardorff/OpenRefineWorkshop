@@ -4,11 +4,11 @@ language:
     chapter_name: "Chapter "
 rmd_files: [
   "index.Rmd",
-  "Overview.Rmd", # session 1
-  "Basic_OpenRefine.Rmd", # session 1
-  "AdvancedOpenRefine.Rmd", # session 2
-  "Export.Rmd", # session 3
-  "Resources.Rmd", # session 4
+  "Overview.Rmd",
+  "Basic_OpenRefine.Rmd", 
+  "AdvancedOpenRefine.Rmd", 
+  "Export.Rmd",
+  "Resources.Rmd", 
  ]
 delete_merged_file: true
 output_dir: "docs"
