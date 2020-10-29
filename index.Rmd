@@ -15,9 +15,10 @@ Got messy spreadsheets? OpenRefine is a powerful, free, open-source software too
 ## Pre-Class Prep
 
 Before joining the workshop please complete the following activities:
-* [Download OpenRefine](http://openrefine.org/download.html)
+
+- [Download OpenRefine](http://openrefine.org/download.html)
     + Note that depending on your operating system you may also need to download java
-* [Download the class data](https://github.com/arieldeardorff/OpenRefineWorkshop/raw/master/NewOpenRefine_Data1.csv)
+- [Download the class data](https://github.com/arieldeardorff/OpenRefineWorkshop/raw/master/NewOpenRefine_Data1.csv)
 
 ## Learning Objectives
 By the end of the class learners should be able to:
