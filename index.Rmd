@@ -10,12 +10,14 @@ output:
 ---
 # Welcome
 
-Got messy spreadsheets? Open Refine is a powerful, free, open-source software tool for cleaning and transforming data in a way that is easy to reproduce. This hands-on class is targeted at people who need to clean messy data, including spreadsheets of survey responses, patient encounters, financial records, or workshop attendance. Together we will work through the basics of cleaning data in OpenRefine and also go over some more advanced techniques including pulling in additional data from an API. If you want something more powerful than Excel but don't want to spend the time to learn a programming language like R or Python, OpenRefine could be the perfect tool for you! 
+Got messy spreadsheets? OpenRefine is a powerful, free, open-source software tool for cleaning and transforming data in a way that is easy to reproduce. This hands-on class is targeted at people who need to clean messy data, including spreadsheets of survey responses, patient encounters, financial records, or workshop attendance. Together we will work through the basics of cleaning data in OpenRefine and also go over some more advanced techniques including pulling in additional data from an API. If you want something more powerful than Excel but don't want to spend the time to learn a programming language like R or Python, OpenRefine could be the perfect tool for you! 
 
 ## Pre-Class Prep
+
+Before joining the workshop please complete the following activities:
 * [Download OpenRefine](http://openrefine.org/download.html)
     + Note that depending on your operating system you may also need to download java
-* [Download the two class data files and the worksheet](tiny.ucsf.edu/dsiopenrefine)
+* [Download the class data](https://github.com/arieldeardorff/OpenRefineWorkshop/raw/master/NewOpenRefine_Data1.csv)
 
 ## Learning Objectives
 By the end of the class learners should be able to:
@@ -30,10 +32,8 @@ By the end of the class learners should be able to:
 - Export their cleaned data in a variety of formats
 - Save their cleaning scripts so they can be re-used
 
-
-
 ## Class Data
-Data for this class was originally pulled from the [National Library of Medicine Dietary Supplements Label Database](https://datadiscovery.nlm.nih.gov/Drugs-and-Supplements/Dietary-Supplements-Label-Database-DSLD-Product-In/wp6t-qxsk). The version we are using has been intentionally “dirtied” to introduce errors and typos.
+Data for this class was pulled from the [National Library of Medicine Dietary Supplements Label Database](https://datadiscovery.nlm.nih.gov/Drugs-and-Supplements/Dietary-Supplements-Label-Database-DSLD-Product-In/wp6t-qxsk). The version we are using has been intentionally “dirtied” to introduce errors and typos.
 
 ## About the Instructor
-Ariel Deardorff is the Data Services Librarian at UCSF, and member of the Library's Data Science Initiative team. She teaches classes and does research on data management, open science, and reproducibility in the health sciences. For questions about this course or other courses email ariel.deardorff@ucsf.edu or visit the [Data Science Initiative Website](https://www.library.ucsf.edu/ask-an-expert/data-science/)
+[Ariel Deardorff](https://profiles.ucsf.edu/ariel.deardorff) is the Data Services Librarian at UCSF, and member of the Library's Data Science Initiative team. She teaches classes and does research on data management, open science, and reproducibility in the health sciences. For questions about this course or other courses email ariel.deardorff@ucsf.edu or visit the [Data Science Initiative Website](https://www.library.ucsf.edu/ask-an-expert/data-science/)
