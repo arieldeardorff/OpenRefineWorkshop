@@ -7,4 +7,4 @@ The OpenRefine project has been saving as you go - but not altering your underly
 - What if we are going to get more of this same kind of data over and over and want to apply the same changes? We could export the script and then re-run it on new data.
     + In the `Undo/Redo` section click `Extract` - select the steps you want to save
     + Then copy and paste into a text editor (like Text Wrangler/Text Edit) and save as a txt file (probably in the same folder as your data or with other scripts you use)
-- Open a new project - select the data - go to `Undo/redo` > `Apply` enter the plain text from your file > `Perform Operations` and blammo it will re-run all the same data cleaning steps on your new dataset.
+- Open a new project with your new data - go to `Undo/redo` > `Apply` enter the plain text from your file > `Perform Operations` and blammo it will re-run all the same data cleaning steps on your new dataset.
