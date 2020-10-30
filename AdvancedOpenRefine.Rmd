@@ -1,6 +1,6 @@
 # Advanced OpenRefine
 
-In addition to the basic data cleaning features, OpenRefine has a variety of advanced features. Here we will go over how to pull in data from external sources and add it to our spreadsheet.
+In addition to the basic data cleaning features, OpenRefine has a variety of advanced features. Here we will go over how to pull in data from external sources and add it to our spreadsheet. To learn more about other advanced features, check out the [Recommended Resources page](https://arieldeardorff.github.io/OpenRefineWorkshop/recommended-resources-and-tutorials.html).
 
 ## Pulling data from an API
 

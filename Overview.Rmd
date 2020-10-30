@@ -15,11 +15,11 @@ Open the spreadsheet “NewOpenRefine_Data1.csv” in excel.
 
 Scenario: You want to learn more about different supplements over time so have downloaded a copy of the National Library of Medicine’s Dietary Supplements Label Database. Before you can start your analysis you want to check for missing/incorrect data. (Note that this copy of the data has been intentionally altered)
 
-## What is Open Refine?
+## What is OpenRefine?
 
 OpenRefine (formerly Google Refine) is an open-source tool for cleaning data. With OpenRefine you can:
 
-- clean relatively large datasets (100,000 rows) fast
+- identify and fix typos and errors in relatively large datasets (100,000 rows) fast
 - track all of your cleaning steps so you know exactly what changes you made
 - keep your raw data raw and export a cleaned version
 - re-run the same data cleaning steps on future datasets
