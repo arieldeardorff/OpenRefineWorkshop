@@ -24,6 +24,7 @@
 <meta name="author" content="Ariel Deardorff, Data Services Librian, UCSF Library" />
 
 
+<meta name="date" content="2020-10-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -73,8 +74,8 @@
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#about-the-instructor"><i class="fa fa-check"></i><b>1.4</b> About the Instructor</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html"><i class="fa fa-check"></i><b>2</b> Getting to Know our Data and Tools</a><ul>
-<li class="chapter" data-level="2.1" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#exploring-the-data"><i class="fa fa-check"></i><b>2.1</b> Exploring the Data</a></li>
-<li class="chapter" data-level="2.2" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#what-is-open-refine"><i class="fa fa-check"></i><b>2.2</b> What is Open Refine?</a></li>
+<li class="chapter" data-level="2.1" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#what-is-openrefine"><i class="fa fa-check"></i><b>2.1</b> What is OpenRefine?</a></li>
+<li class="chapter" data-level="2.2" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#exploring-the-data"><i class="fa fa-check"></i><b>2.2</b> Exploring the Data</a></li>
 <li class="chapter" data-level="2.3" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#uploading-data-into-openrefine"><i class="fa fa-check"></i><b>2.3</b> Uploading Data Into OpenRefine</a></li>
 <li class="chapter" data-level="2.4" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#the-openrefine-interface"><i class="fa fa-check"></i><b>2.4</b> The OpenRefine Interface</a></li>
 </ul></li>
@@ -111,7 +112,7 @@
             <section class="normal" id="section-">
 <div id="advanced-openrefine" class="section level1">
 <h1><span class="header-section-number">Chapter 4</span> Advanced OpenRefine</h1>
-<p>In addition to the basic data cleaning features, OpenRefine has a variety of advanced features. Here we will go over how to pull in data from external sources and add it to our spreadsheet.</p>
+<p>In addition to the basic data cleaning features, OpenRefine has a variety of advanced features. Here we will go over how to pull in data from external sources and add it to our spreadsheet. To learn more about other advanced features, check out the <a href="https://arieldeardorff.github.io/OpenRefineWorkshop/recommended-resources-and-tutorials.html">Recommended Resources page</a>.</p>
 <div id="pulling-data-from-an-api" class="section level2">
 <h2><span class="header-section-number">4.1</span> Pulling data from an API</h2>
 <p>Our current spreadsheet is missing some data about the tracking history of these products. Luckily, this data is available in the National Library of Medicine's Dietary Supplements Label Database and we can access it via an application programming interface (API). To learn more about this particular database and API you can visit <a href="https://datadiscovery.nlm.nih.gov/Drugs-and-Supplements/Dietary-Supplements-Label-Database-DSLD-Product-In/wp6t-qxsk">the website</a>.</p>
@@ -124,6 +125,12 @@
 <ul>
 <li>In the box enter: <code>&quot;https://datadiscovery.nlm.nih.gov/resource/wp6t-qxsk.json?dsld_id=&quot;+value</code> this is the URL of the API plus a stand-in for the ID number (the <code>+value</code>). You should see a preview of the URL with the ID at the end.</li>
 </ul></li>
+</ul>
+<div class="figure">
+<img src="images/OpenRefine_API.png" />
+
+</div>
+<ul>
 <li>Name the new column <code>JSON</code> and hit <code>OK</code>. It might take a minute or so to load but eventually we should get a paragraph of text in JSON format.</li>
 </ul>
 </div>
@@ -133,8 +140,18 @@
 <li>JSON, or JavaScript Object Notation is a text format for storing and sharing data, often in lists or dictionaries. We basically asked the NLM database to send us all the info they have for this ID. Now we need to extract the info we want and put it in a new column</li>
 <li>Under the <code>JSON</code> column select <code>Edit column</code> &gt; <code>Add column based on this column</code>
 <ul>
-<li>In the box write: <code>value.parseJson()[0][&quot;tracking_history&quot;]</code>. This is a GREL (google refine experssion language) expression that tells OpenRefine to parse the JSON by pulling the first list of items [0] and then pulling the data that corresponds with the Tracking history segment. When you are done name this column <code>Tracking History</code> and hit <code>OK</code>. You can learn more about parsing JSON in this other library class: <a href="https://courses.ucsf.edu/course/view.php?id=5247">Reading Data from an API with Python and JSON</a>.</li>
+<li>In the box write: <code>value.parseJson()[0][&quot;tracking_history&quot;]</code>. This is a GREL (google refine experssion language) command that tells OpenRefine to extract the relevant bit of the JSON data by pulling the first list of items [0] and then pulling the data that corresponds with the <code>Tracking history segment</code>. When you are done name this column <code>Tracking History</code> and hit <code>OK</code>. You can learn more about parsing JSON in this other library class: <a href="https://courses.ucsf.edu/course/view.php?id=5247">Reading Data from an API with Python and JSON</a>.</li>
 </ul></li>
+</ul>
+<div class="figure">
+<img src="images/OpenRefine_ParseJSON.png" />
+
+</div>
+<div class="figure">
+<img src="images/OpenRefine_FinalResult.png" />
+
+</div>
+<ul>
 <li>There are a ton of ways to add more info to OpenRefine. In addition to adding new data you can also reconcile the data you have by pulling in official lists of names/businesses/authors from a site like Wikidata (more info in the resources section at the end).</li>
 <li><strong>Challenge</strong>: add a new column containing the <code>database</code> info from the JSON. Hint: look at the <code>History</code> tab in your GREL workspace to see your previous commands.</li>
 </ul>

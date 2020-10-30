@@ -28,6 +28,8 @@ Scenario: You want to learn more about different supplements over time so have d
 
 ## Uploading Data Into OpenRefine
 
+![](images/OpenRefine_Upload.png)
+
 - Open OpenRefine (you might need to say `Allow` to run the first time or change security settings) – note that it opens in a browser at http://127.0.0.1:3333/
 - On the main page we have three main tabs: 
     + `Create Project` – to create a new project from scratch – this is what we will be using today
@@ -39,6 +41,8 @@ Scenario: You want to learn more about different supplements over time so have d
 - When everything looks good you select `Create Project` in the upper right corner 
 
 ## The OpenRefine Interface
+
+![](images/OpenRefine_Interface.png)
 
 - On the left you will find the OpenRefine workspace with two tabs: `Facet/Filter` and `Undo/Redo`
     + `Facet/Filter` is where we will see our different facets and filters appear as we click on them

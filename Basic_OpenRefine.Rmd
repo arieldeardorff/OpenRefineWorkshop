@@ -49,6 +49,9 @@ Now let’s clean up the rest of our `Brand Name` column using Clustering! Clust
     + `key collision`: generates a key from a value based on common transformations (what is the core value when you remove whitespace/capitalization/punctuation
     + `nearest neighbor`: each unique value is compared to every other unique value using a distance function
     + Fortunately, we don’t really need to understand the algorithms because it is easy to try them all!
+    
+![](images/OpenRefine_Cluster.png)
+    
 - In the clustering box we can see:
     + `Cluster Size`: how many different options in that cluster
     + `Row Count`: how many rows will be changed
