@@ -1,3 +1,10 @@
+---
+title: "OpenRefine Overview"
+author: Ariel Deardorff
+date: October 30, 2020
+output: ioslides_presentation
+---
+
 # Getting to Know our Data and Tools
 
 Let's get to know our data and learn the basics of OpenRefine. 
@@ -10,7 +17,14 @@ Scenario: You want to learn more about different supplements over time so have d
 
 ## What is Open Refine?
 
-Slides here?
+OpenRefine (formerly Google Refine) is an open-source tool for cleaning data. With OpenRefine you can:
+
+- clean relatively large datasets (100,000 rows) fast
+- track all of your cleaning steps so you know exactly what changes you made
+- keep your raw data raw and export a cleaned version
+- re-run the same data cleaning steps on future datasets
+
+An important thing to know about OpenRefine is that while it opens in your browser it is actually a java-based tool that is running on your computer and therefore does not require internet access.
 
 ## Uploading Data Into OpenRefine
 
