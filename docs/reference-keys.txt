@@ -4,8 +4,8 @@ learning-objectives
 class-data
 about-the-instructor
 getting-to-know-our-data-and-tools
+what-is-openrefine
 exploring-the-data
-what-is-open-refine
 uploading-data-into-openrefine
 the-openrefine-interface
 basic-data-cleaning-with-openrefine
@@ -20,4 +20,3 @@ pulling-data-from-an-api
 extracting-the-data
 exporting-cleaned-data-and-scripts
 recommended-resources-and-tutorials
-what-is-openrefine

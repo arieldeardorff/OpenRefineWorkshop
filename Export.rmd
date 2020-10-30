@@ -1,6 +1,6 @@
 # Exporting Cleaned Data and Scripts
 
-The OpenRefine project has been saving as you go - but not altering your underlying data (remember!)
+The OpenRefine project has been saving as you go - but not altering your underlying data (this is a good thing!)
 
 - To export the cleaned version of our data we need to click `Export` (top left corner) then choose the type of file (CSV or Excel)
     + We recommend that you rename your new file with a good title like "dataxyz_cleaned" so you know that it is the cleaned version.
