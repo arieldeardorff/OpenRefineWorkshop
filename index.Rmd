@@ -18,7 +18,7 @@ Before joining the workshop please complete the following activities:
 
 - [Download OpenRefine](http://openrefine.org/download.html)
     + Note that depending on your operating system you may also need to download java
-- <a href="https://raw.githubusercontent.com/arieldeardorff/OpenRefineWorkshop/master/NewOpenRefine_Data1.csv" download="NewOpenRefine_Data1.csv">Download the class data</a> 
+- <a href="NewOpenRefine_Data1.csv" download>Download the class data</a>
 
 ## Learning Objectives
 By the end of the class learners should be able to:
