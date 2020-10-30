@@ -9,12 +9,6 @@ output: ioslides_presentation
 
 Let's get to know our data and learn the basics of OpenRefine. 
 
-## Exploring the Data 
-
-Open the spreadsheet “NewOpenRefine_Data1.csv” in excel. 
-
-Scenario: You want to learn more about different supplements over time so have downloaded a copy of the National Library of Medicine’s Dietary Supplements Label Database. Before you can start your analysis you want to check for missing/incorrect data. (Note that this copy of the data has been intentionally altered)
-
 ## What is OpenRefine?
 
 OpenRefine (formerly Google Refine) is an open-source tool for cleaning data. With OpenRefine you can:
@@ -26,9 +20,15 @@ OpenRefine (formerly Google Refine) is an open-source tool for cleaning data. Wi
 
 An important thing to know about OpenRefine is that while it opens in your browser it is actually a java-based tool that is running on your computer and therefore does not require internet access.
 
+## Exploring the Data 
+
+Now let's take a look at our data. Open the spreadsheet “NewOpenRefine_Data1.csv” in excel. 
+
+Scenario: You want to learn more about different supplements over time so have downloaded a copy of the National Library of Medicine’s Dietary Supplements Label Database. Before you can start your analysis you want to check for missing/incorrect data. (Note that this copy of the data has been intentionally altered)
+
 ## Uploading Data Into OpenRefine
 
-- Open OpenRefine (you might need to say "allow" to run the first time or change security settings) – note that it opens in a browser at http://127.0.0.1:3333/
+- Open OpenRefine (you might need to say `Allow` to run the first time or change security settings) – note that it opens in a browser at http://127.0.0.1:3333/
 - On the main page we have three main tabs: 
     + `Create Project` – to create a new project from scratch – this is what we will be using today
     + `Open Project` - for an OpenRefine project you have previously worked on
