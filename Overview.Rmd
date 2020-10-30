@@ -44,7 +44,7 @@ Scenario: You want to learn more about different supplements over time so have d
 
 ![](images/OpenRefine_Interface.png)
 
-- On the left you will find the OpenRefine workspace with two tabs: `Facet/Filter` and `Undo/Redo`
+- On the left of the OpenRefine workspace you will find two tabs: `Facet/Filter` and `Undo/Redo`
     + `Facet/Filter` is where we will see our different facets and filters appear as we click on them
     + `Undo/Redo` is how we undo changes – note that OpenRefine does not have a “back” button.
 - In the middle you will find your data – note that you can select how many rows you want to see at once – from 5 to 50.
