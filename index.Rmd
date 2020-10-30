@@ -38,3 +38,7 @@ Data for this class was pulled from the [National Library of Medicine Dietary Su
 
 ## About the Instructor
 [Ariel Deardorff](https://profiles.ucsf.edu/ariel.deardorff) is the Data Services Librarian at UCSF, and member of the Library's Data Science Initiative team. She teaches classes and does research on data management, open science, and reproducibility in the health sciences. For questions about this course or other courses email ariel.deardorff@ucsf.edu or visit the [Data Science Initiative Website](https://www.library.ucsf.edu/ask-an-expert/data-science/)
+
+----
+
+![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
