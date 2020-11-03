@@ -1,10 +1,3 @@
----
-title: "OpenRefine Overview"
-author: Ariel Deardorff
-date: October 30, 2020
-output: ioslides_presentation
----
-
 # Getting to Know our Data and Tools
 
 Let's get to know our data and learn the basics of OpenRefine. 
