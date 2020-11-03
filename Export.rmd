@@ -3,8 +3,8 @@
 The OpenRefine project has been saving as you go - but not altering your underlying data (this is a good thing!)
 
 - To export the cleaned version of our data we need to click `Export` (top left corner) then choose the type of file (CSV or Excel)
-    + We recommend that you rename your new file with a good title like "dataxyz_cleaned" so you know that it is the cleaned version.
-- What if we are going to get more of this same kind of data over and over and want to apply the same changes? We could export the script and then re-run it on new data.
-    + In the `Undo/Redo` section click `Extract` - select the steps you want to save
-    + Then copy and paste into a text editor (like Text Wrangler/Text Edit) and save as a txt file (probably in the same folder as your data or with other scripts you use)
-- Open a new project with your new data - go to `Undo/redo` > `Apply` enter the plain text from your file > `Perform Operations` and blammo it will re-run all the same data cleaning steps on your new dataset.
+    + We recommend that you rename your new file with a title like "dataxyz_cleaned" so you know that it is the cleaned version.
+- What if we are going to get more of this same kind of data over and over and want to apply the same changes? We could export our cleaning script and then re-run it on new data.
+    + In the `Undo/Redo` section click `Extract` - select the steps you want to save (this is also where you can see the detailed step by step record of all of your changes!)
+    + Then copy and paste the code into a text editor (like Text Wrangler/Text Edit) and save as a txt file (probably in the same folder as your data or with other scripts you use)
+- To apply the script to new data, you need to open a project with your new data - go to `Undo/redo` > `Apply` enter the plain text from your file hit `Perform Operations` and blammo it will re-run all the same data cleaning steps on your new dataset!

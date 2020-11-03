@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Advanced OpenRefine | Introduction to OpenRefine</title>
-  <meta name="description" content="Chapter 4 Advanced OpenRefine | Introduction to OpenRefine" />
+  <title>Chapter4 Advanced OpenRefine | Introduction to OpenRefine</title>
+  <meta name="description" content="Chapter4 Advanced OpenRefine | Introduction to OpenRefine" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Advanced OpenRefine | Introduction to OpenRefine" />
+  <meta property="og:title" content="Chapter4 Advanced OpenRefine | Introduction to OpenRefine" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Advanced OpenRefine | Introduction to OpenRefine" />
+  <meta name="twitter:title" content="Chapter4 Advanced OpenRefine | Introduction to OpenRefine" />
   
   
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Ariel Deardorff, Data Services Librian, UCSF Library" />
 
 
-<meta name="date" content="2020-10-30" />
+<meta name="date" content="2020-11-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -111,15 +111,15 @@
 
             <section class="normal" id="section-">
 <div id="advanced-openrefine" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Advanced OpenRefine</h1>
+<h1><span class="header-section-number">Chapter4</span> Advanced OpenRefine</h1>
 <p>In addition to the basic data cleaning features, OpenRefine has a variety of advanced features. Here we will go over how to pull in data from external sources and add it to our spreadsheet. To learn more about other advanced features, check out the <a href="https://arieldeardorff.github.io/OpenRefineWorkshop/recommended-resources-and-tutorials.html">Recommended Resources page</a>.</p>
 <div id="pulling-data-from-an-api" class="section level2">
 <h2><span class="header-section-number">4.1</span> Pulling data from an API</h2>
 <p>Our current spreadsheet is missing some data about the tracking history of these products. Luckily, this data is available in the National Library of Medicine's Dietary Supplements Label Database and we can access it via an application programming interface (API). To learn more about this particular database and API you can visit <a href="https://datadiscovery.nlm.nih.gov/Drugs-and-Supplements/Dietary-Supplements-Label-Database-DSLD-Product-In/wp6t-qxsk">the website</a>.</p>
 <ul>
-<li>Before we add a bunch of new data, let’s test our script on a couple of records. Go ahead and star five records using the little star icon on the far left of each record.
+<li>Before we add a bunch of new data, let’s test our script on a couple of records. Go ahead and star two records using the little star icon on the far left of each record.
 <ul>
-<li>Then, under <code>All</code> &gt; <code>Facet</code> &gt; <code>Facet by star</code> and select <code>TRUE</code> in the facet box on the left.</li>
+<li>Then, under <code>All</code> &gt; <code>Facet</code> &gt; <code>Facet by star</code> and select <code>TRUE</code> in the facet box on the left. Now we can work with these two records.</li>
 </ul></li>
 <li>Now we want to pull new data from the database using the <code>DSLD ID</code> number. Under the <code>DSLD ID</code> column select &gt; <code>Edit column</code> &gt; <code>Add column by fetching URLs</code>
 <ul>
@@ -131,7 +131,7 @@
 
 </div>
 <ul>
-<li>Name the new column <code>JSON</code> and hit <code>OK</code>. It might take a minute or so to load but eventually we should get a paragraph of text in JSON format.</li>
+<li>Name the new column <code>JSON</code> and hit <code>OK</code>. It might take a minute or so to load but eventually we should get a new column called <code>JSON</code> with a paragraph of text in JSON format.</li>
 </ul>
 </div>
 <div id="extracting-the-data" class="section level2">
@@ -140,8 +140,9 @@
 <li>JSON, or JavaScript Object Notation is a text format for storing and sharing data, often in lists or dictionaries. We basically asked the NLM database to send us all the info they have for this ID. Now we need to extract the info we want and put it in a new column</li>
 <li>Under the <code>JSON</code> column select <code>Edit column</code> &gt; <code>Add column based on this column</code>
 <ul>
-<li>In the box write: <code>value.parseJson()[0][&quot;tracking_history&quot;]</code>. This is a GREL (google refine experssion language) command that tells OpenRefine to extract the relevant bit of the JSON data by pulling the first list of items [0] and then pulling the data that corresponds with the <code>Tracking history segment</code>. When you are done name this column <code>Tracking History</code> and hit <code>OK</code>. You can learn more about parsing JSON in this other library class: <a href="https://courses.ucsf.edu/course/view.php?id=5247">Reading Data from an API with Python and JSON</a>.</li>
+<li>In the box write: <code>value.parseJson()[0][&quot;tracking_history&quot;]</code>. This is a GREL (google refine experssion language) command that tells OpenRefine to extract the relevant bit of the JSON data by pulling the first list of items [0] and then pulling the data that corresponds with the <code>Tracking history</code> segment. When you are done name this column <code>Tracking History</code> and hit <code>OK</code>. Now we should have a new column called &quot;Tracking History&quot; with the relevant info from the JSON text.</li>
 </ul></li>
+<li>You can learn more about parsing JSON in this UCSF library class: <a href="https://courses.ucsf.edu/course/view.php?id=5247">Reading Data from an API with Python and JSON</a>.</li>
 </ul>
 <div class="figure">
 <img src="images/OpenRefine_ParseJSON.png" />
