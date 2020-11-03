@@ -13,12 +13,12 @@ Let's get to know our data and learn the basics of OpenRefine.
 
 OpenRefine (formerly Google Refine) is an open-source tool for cleaning data. With OpenRefine you can:
 
-- identify and fix typos and errors in relatively large datasets (100,000 rows) fast
-- track all of your cleaning steps so you know exactly what changes you made
-- keep your raw data raw and export a cleaned version
-- re-run the same data cleaning steps on future datasets
+- Identify and fix typos and errors in relatively large datasets (100,000 rows) fast
+- Track all of your cleaning steps so you know exactly what changes you made
+- Keep your raw data raw and export a cleaned version
+- Re-run the same data cleaning steps on future datasets
 
-An important thing to know about OpenRefine is that while it opens in your browser it is actually a java-based tool that is running on your computer and therefore does not require internet access.
+An important thing to know about OpenRefine is that while it opens in your browser it is actually a java-based tool that is running on your computer, and therefore does not require internet access.
 
 ## Exploring the Data 
 
