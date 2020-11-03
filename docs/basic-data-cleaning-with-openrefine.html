@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine</title>
-  <meta name="description" content="Chapter 3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine" />
+  <title>Chapter3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine</title>
+  <meta name="description" content="Chapter3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine" />
+  <meta property="og:title" content="Chapter3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine" />
+  <meta name="twitter:title" content="Chapter3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine" />
   
   
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Ariel Deardorff, Data Services Librian, UCSF Library" />
 
 
-<meta name="date" content="2020-10-30" />
+<meta name="date" content="2020-11-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -111,7 +111,7 @@
 
             <section class="normal" id="section-">
 <div id="basic-data-cleaning-with-openrefine" class="section level1">
-<h1><span class="header-section-number">Chapter 3</span> Basic Data Cleaning with OpenRefine</h1>
+<h1><span class="header-section-number">Chapter3</span> Basic Data Cleaning with OpenRefine</h1>
 <p>Let's dive into our data with some basic exploration and cleaning.</p>
 <div id="splitting-columns" class="section level2">
 <h2><span class="header-section-number">3.1</span> Splitting Columns</h2>
@@ -142,6 +142,7 @@
 <ul>
 <li>Some of the <code>Serving Units</code> look a little odd, but they were actually provided that way by the manufacturer so we will leave them for now.</li>
 </ul></li>
+<li><strong>Challenge</strong>: What Brand makes a supplement that comes in the form of &quot;Gummy Dolphin(s)&quot;?</li>
 <li><strong>Challenge</strong>: Use the <code>Facet</code> feature on the <code>Serving Amount</code> column. How many unique variables are there? What is the most frequent serving amount?</li>
 </ul>
 <p>Now let's use faceting to find some potential mistakes:</p>
@@ -149,14 +150,15 @@
 <li>Now let’s try faceting the <code>LanguaL-Product Type</code> column. It looks like we have 14 choices but some of these look a little odd. For example, it looks like we have 25 records for <code>Amino acid/protein [A1305</code> and 2325 records for <code>Amino acid/protein [A1305]</code>. In this case we know that those 25 records should say <code>[A1305]</code>.To fix this, we can click <code>Edit</code> next to those records, update the records, and select <code>Apply</code>. No we have 13 choices</li>
 <li>It looks like there are a couple more spelling mistakes in this column, we could fix them manually as we did above, but let’s hold off and use the clustering feature later.</li>
 <li><strong>Challenge</strong>: Facet the <code>Brands Names</code> column, how many options are there? Do you see any potential mistakes?</li>
+<li><strong>Challenge</strong>: Explore the other kinds of facets, do any of these seem useful to you?</li>
 </ul>
 </div>
 <div id="trimming-whitespace-and-changing-to-titlecase" class="section level2">
 <h2><span class="header-section-number">3.4</span> Trimming Whitespace and Changing to Titlecase</h2>
 <ul>
 <li>Some of the names in our <code>Brand Name</code> column look very similar. Before we spend a lot of time trying to manually clean or cluster all 1781 of them let’s try two easy cleaning steps.</li>
-<li>First, let’s trim any whitespace at the beginning or end of the row on the <code>Brand Name</code> column by selecting <code>edit cells</code> &gt; <code>common transforms</code> &gt; <code>trim leading and trailing whitespace</code> – already our total number has come down to 1778</li>
-<li>Next, let’s change everything to titlecase by selecting <code>edit cells</code> &gt; <code>common transforms</code> &gt; <code>To titlecase</code> – now we have 1693 options.</li>
+<li>First, let’s trim any whitespace at the beginning or end of the row on the <code>Brand Name</code> column by selecting <code>Edit cells</code> &gt; <code>Common transforms</code> &gt; <code>Trim leading and trailing whitespace</code> – already our total number has come down to 1778</li>
+<li>Next, let’s change everything to titlecase by selecting <code>Edit cells</code> &gt; <code>Common transforms</code> &gt; <code>To titlecase</code> – now we have 1693 options.</li>
 </ul>
 </div>
 <div id="clustering-data" class="section level2">
@@ -166,10 +168,10 @@
 <li>In the <code>Facet</code> window for our column, let’s hit <code>Cluster</code> in the upper right-hand corner</li>
 <li>OpenRefine uses two main algorithms for clustering the data:
 <ul>
-<li><code>key collision</code>: generates a key from a value based on common transformations (what is the core value when you remove whitespace/capitalization/punctuation</li>
+<li><code>key collision</code>: generates a key from a value based on common transformations (what is the core value when you remove whitespace/capitalization/punctuation)</li>
 <li><code>nearest neighbor</code>: each unique value is compared to every other unique value using a distance function</li>
-<li>Fortunately, we don’t really need to understand the algorithms because it is easy to try them all!</li>
 </ul></li>
+<li>Fortunately, we don’t really need to understand the algorithms because it is easy to try them all!</li>
 </ul>
 <div class="figure">
 <img src="images/OpenRefine_Cluster.png" />
@@ -181,23 +183,25 @@
 <li><code>Cluster Size</code>: how many different options in that cluster</li>
 <li><code>Row Count</code>: how many rows will be changed</li>
 <li><code>Values in Cluster</code>: possible options</li>
-<li><code>Merge?</code>box</li>
+<li><code>Merge?</code>: check box if you wish to merge those cells</li>
 <li><code>New cell value</code>: what the cell should say</li>
 </ul></li>
-<li>Start with the <code>Key Collision</code> Method and work your way through the <code>keying functions</code> – there should be many options to cluster. If they all look good you can use <code>select all</code> in the bottom left (note that you might need to decrease the size of your window to see this)
+<li>Start with the <code>Key Collision</code> Method and work your way through the <code>Keying function</code> – there should be many options to cluster. If they all look good you can use <code>Select all</code> in the bottom left (note that you might need to decrease the size of your window to see this)
 <ul>
 <li>If the selected replacement looks correct we can check the <code>Merge</code> box and then click <code>Merge selected and re-cluster</code> at the bottom</li>
 <li>As you work through the remaining algorithms you might see that some work better than others. Take a look at all the options but only cluster using the <code>Key Collision</code> – <code>fingerprint</code>, <code>ngram fingerprint</code> and <code>Nearest Neighbor</code> – <code>levenshtein</code> You should have approximately 1625 choices now (but don’t worry if you don’t have the same number)</li>
 </ul></li>
-<li><strong>Challenge</strong>: <code>Facet</code> and <code>cluster</code> the <code>LanguaL-Product Type</code> column. How many unique variables do you end up with?</li>
+<li><strong>Challenge</strong>: Which methods and keying functions <strong>do not</strong> seem like they will work for the Brand Name column?</li>
+<li><strong>Challenge</strong>: <code>Facet</code> and <code>Cluster</code> the <code>LanguaL-Product Type</code> column. How many unique variables do you end up with?</li>
 </ul>
 </div>
 <div id="sorting" class="section level2">
 <h2><span class="header-section-number">3.6</span> Sorting</h2>
 <ul>
 <li>Right now the data is sorted by <code>Brand Name</code> first, what if we wanted to sort by <code>DSLD ID</code>?</li>
-<li>Under <code>DSLD ID</code> select <code>Sort   and we want to sort by number. Note that we can position errors and blanks at the beginning to help us spot them if we want. + You can edit your sort by selecting</code>Sorts under the specific column, or reversing or removing it to undo (since it is not listed in the <code>Undo/redo</code> column).
+<li>Under <code>DSLD ID</code> select <code>Sort</code> and we want to sort by <code>numbers</code>. Note that we can position errors and blanks at the beginning to help us spot them if we want. Hit <code>Ok</code> when you are happy with your sort.
 <ul>
+<li>You can edit your sort by selecting <code>Sort</code> again under the specific column. You can also select <code>Sort</code> &gt; <code>Reverse</code> or <code>Remove sort</code> to undo (since it is not listed in the <code>Undo/redo</code> column).</li>
 <li>Note that this didn't add any steps to the <code>Undo/Redo</code> - the sort is not permanent</li>
 <li>If we wanted it to be permanent we would select <code>Sort</code> in the top middle &gt; <code>Reorder rows permanently</code></li>
 </ul></li>

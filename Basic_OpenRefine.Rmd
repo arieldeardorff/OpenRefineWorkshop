@@ -26,6 +26,7 @@ Let's facet to get a snapshot of our data:
 - We can scroll down to see if our splits have worked correctly but it is always smart to double check with a facet. Let’s get a snapshot of our new `Serving Unit` column by selecting `Facet` > `Text facet`
 - On the left we can now see a list of all the different values in this column in alphabetical order or by count. There should be 433 choices. If we click on any of the options we will filter to just those rows. 
     + Some of the `Serving Units` look a little odd, but they were actually provided that way by the manufacturer so we will leave them for now.
+- **Challenge**: What Brand makes a supplement that comes in the form of "Gummy Dolphin(s)"?
 - **Challenge**: Use the `Facet` feature on the `Serving Amount` column. How many unique variables are there? What is the most frequent serving amount?
 
 Now let's use faceting to find some potential mistakes:
@@ -33,12 +34,13 @@ Now let's use faceting to find some potential mistakes:
 - Now let’s try faceting the `LanguaL-Product Type` column. It looks like we have 14 choices but some of these look a little odd. For example, it looks like we have 25 records for `Amino acid/protein [A1305` and 2325 records for `Amino acid/protein [A1305]`. In this case we know that those 25 records should say `[A1305]`.To fix this, we can click `Edit` next to those records, update the records, and select `Apply`. No we have 13 choices
 - It looks like there are a couple more spelling mistakes in this column, we could fix them manually as we did above, but let’s hold off and use the clustering feature later.
 - **Challenge**: Facet the `Brands Names` column, how many options are there? Do you see any potential mistakes?
+- **Challenge**: Explore the other kinds of facets, do any of these seem useful to you?
 
 ## Trimming Whitespace and Changing to Titlecase
 
 - Some of the names in our `Brand Name` column look very similar. Before we spend a lot of time trying to manually clean or cluster all 1781 of them let’s try two easy cleaning steps.
-- First, let’s trim any whitespace at the beginning or end of the row on the `Brand Name` column by selecting `edit cells` > `common transforms` > `trim leading and trailing whitespace` – already our total number has come down to 1778
-- Next, let’s change everything to titlecase by selecting `edit cells` > `common transforms` > `To titlecase` – now we have 1693 options.
+- First, let’s trim any whitespace at the beginning or end of the row on the `Brand Name` column by selecting `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace` – already our total number has come down to 1778
+- Next, let’s change everything to titlecase by selecting `Edit cells` > `Common transforms` > `To titlecase` – now we have 1693 options.
 
 ## Clustering Data
 
@@ -46,9 +48,9 @@ Now let’s clean up the rest of our `Brand Name` column using Clustering! Clust
 
 - In the `Facet` window for our column, let’s hit `Cluster` in the upper right-hand corner
 - OpenRefine uses two main algorithms for clustering the data:
-    + `key collision`: generates a key from a value based on common transformations (what is the core value when you remove whitespace/capitalization/punctuation
+    + `key collision`: generates a key from a value based on common transformations (what is the core value when you remove whitespace/capitalization/punctuation)
     + `nearest neighbor`: each unique value is compared to every other unique value using a distance function
-    + Fortunately, we don’t really need to understand the algorithms because it is easy to try them all!
+- Fortunately, we don’t really need to understand the algorithms because it is easy to try them all!
     
 ![](images/OpenRefine_Cluster.png)
     
@@ -56,18 +58,19 @@ Now let’s clean up the rest of our `Brand Name` column using Clustering! Clust
     + `Cluster Size`: how many different options in that cluster
     + `Row Count`: how many rows will be changed
     + `Values in Cluster`: possible options
-    + `Merge?`box
+    + `Merge?`: check box if you wish to merge those cells
     + `New cell value`: what the cell should say
-- Start with the `Key Collision` Method and work your way through the `keying functions` – there should be many options to cluster. If they all look good you can use `select all` in the bottom left (note that you might need to decrease the size of your window to see this)
+- Start with the `Key Collision` Method and work your way through the `Keying function` – there should be many options to cluster. If they all look good you can use `Select all` in the bottom left (note that you might need to decrease the size of your window to see this)
     + If the selected replacement looks correct we can check the `Merge` box and then click `Merge selected and re-cluster` at the bottom
     + As you work through the remaining algorithms you might see that some work better than others. Take a look at all the options but only cluster using the `Key Collision` – `fingerprint`, `ngram fingerprint` and `Nearest Neighbor` – `levenshtein` You should have approximately 1625 choices now (but don’t worry if you don’t have the same number) 
-- **Challenge**: `Facet` and `cluster` the `LanguaL-Product Type` column. How many unique variables do you end up with?
+- **Challenge**: Which methods and keying functions **do not** seem like they will work for the Brand Name column?
+- **Challenge**: `Facet` and `Cluster` the `LanguaL-Product Type` column. How many unique variables do you end up with?
 
 ## Sorting
 
 - Right now the data is sorted by `Brand Name` first, what if we wanted to sort by `DSLD ID`?
-- Under `DSLD ID` select `Sort   and we want to sort by number. Note that we can position errors and blanks at the beginning to help us spot them if we want.
-    + You can edit your sort by selecting `Sorts under the specific column, or reversing or removing it to undo (since it is not listed in the `Undo/redo` column).
+- Under `DSLD ID` select `Sort` and we want to sort by `numbers`. Note that we can position errors and blanks at the beginning to help us spot them if we want. Hit `Ok` when you are happy with your sort.
+    + You can edit your sort by selecting `Sort` again under the specific column. You can also select `Sort` > `Reverse` or `Remove sort` to undo (since it is not listed in the `Undo/redo` column).
     + Note that this didn't add any steps to the `Undo/Redo` - the sort is not permanent
     + If we wanted it to be permanent we would select `Sort` in the top middle > `Reorder rows permanently`
 - We can sort by multiple things, just sort each row in the order you want them sorted (view the order in the sort menu) ex: sort `DSLD ID` then `Brand Name`
