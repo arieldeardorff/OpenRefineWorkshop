@@ -17,7 +17,7 @@ An important thing to know about OpenRefine is that while it opens in your brows
 
 Now let's take a look at our data. Open the spreadsheet “NewOpenRefine_Data1.csv” in excel. 
 
-Scenario: You want to learn more about different supplements over time so have downloaded a copy of the National Library of Medicine’s Dietary Supplements Label Database. Before you can start your analysis you want to check for missing/incorrect data. (Note that this copy of the data has been intentionally altered)
+Scenario: You want to learn more about different supplements over time so have downloaded a copy of the [National Library of Medicine Dietary Supplements Label Database](https://datadiscovery.nlm.nih.gov/Drugs-and-Supplements/Dietary-Supplements-Label-Database-DSLD-Product-In/wp6t-qxsk). Before you can start your analysis you want to check for missing/incorrect data. (Note that this copy of the data has been intentionally altered)
 
 ## Uploading Data Into OpenRefine
 
