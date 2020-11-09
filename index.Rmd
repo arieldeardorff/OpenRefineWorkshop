@@ -1,6 +1,6 @@
 ---
 title: "Introduction to OpenRefine"
-author: "Ariel Deardorff, Data Services Librian, UCSF Library"
+author: "Ariel Deardorff, Data Services Librarian, UCSF Library"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
