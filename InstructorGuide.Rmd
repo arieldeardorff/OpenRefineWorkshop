@@ -1,0 +1,41 @@
+---
+title: "Instructor Guide"
+author: "Ariel Deardorff"
+date: "11/13/2020"
+output: html_document
+---
+
+This is a notes document to help instructors use this tutorial in an online workshop setting.
+
+# Welcome
+
+- After I introduce myself have the class introduce themselves out loud or via the zoom chat (if there are more than 10 people).
+    + Should share their name, department, what kind of data they work with, and what tools they currently use to clean their data.
+- Spend some time going over the zoom setup:
+    + might want to split their screen if on one monitor
+    + get help via the chat, can also unmute and ask me to repeat something (encouraged to help others in the chat!)
+    + will use the non-verbal feedback. Practice giving the green yes/red no
+    + share the link to the online tutorial to follow along - don't need to worry about taking notes
+
+# Getting to Know our Data and Tools 
+
+- Do yes/no checks after opening the tool and loading the data to make sure everyone is on the same page
+
+# Basic Data Cleaning with OpenRefine
+
+- Report the answer to the challenges in the zoom chat.
+- For Faceting Data - consider using breakout rooms for the challenges - poll learners to see what they want to do
+- 5 min break at the end of this section
+
+# Advanced OpenRefine
+
+- Consider breakout rooms for the last challenge
+
+# Exporting Cleaned Data and Scripts
+
+- Discussion Q: Does anyone have a good file naming scheme they want to share?
+
+# Recommended Resources and Tutorials
+
+- Wrap up question for the chat: How do you think you will use this tool in your work?
+- Time for questions at the end (via chat or out loud)
