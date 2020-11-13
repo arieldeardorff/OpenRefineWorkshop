@@ -1,6 +1,8 @@
 # Data Cleaning with OpenRefine
 This is the Github repository for the UCSF Library OpenRefine workshop. If you have any ideas, suggestions, questions or comments feel free to open an issue, submit a pull request, or send me an email!
 
+A short [instructor guide](https://github.com/arieldeardorff/OpenRefineWorkshop/blob/master/InstructorGuide.Rmd) is now available as a markdown file.
+
 ----
 
 ## About the Instructor
