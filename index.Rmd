@@ -29,7 +29,6 @@ By the end of the class learners should be able to:
     + Facet data to find typos and errors
     + Cluster data to easily correct typos at scale
     + Pull in additional data from an API
-    + Transform wide data into tidy data format 
 - Export their cleaned data in a variety of formats
 - Save their cleaning scripts so they can be re-used
 
