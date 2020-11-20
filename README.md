@@ -1,4 +1,6 @@
 # Data Cleaning with OpenRefine
+![](https://zenodo.org/badge/DOI/10.5281/zenodo.4281566.svg)
+
 This is the Github repository for the UCSF Library OpenRefine workshop. If you have any ideas, suggestions, questions or comments feel free to open an issue, submit a pull request, or send me an email!
 
 A short [instructor guide](https://github.com/arieldeardorff/OpenRefineWorkshop/blob/master/InstructorGuide.Rmd) is also available as a markdown file.
