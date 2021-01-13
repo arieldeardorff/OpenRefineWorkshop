@@ -9,12 +9,12 @@ This is a notes document to help instructors use this tutorial in an online work
 
 # Welcome
 
-- After I introduce myself have the class introduce themselves out loud or via the zoom chat (if there are more than 10 people).
+- After I introduce myself and go over the learning objectives have the class introduce themselves out loud or via the zoom chat (if there are more than 10 people).
     + Should share their name, department, what kind of data they work with, and what tools they currently use to clean their data.
 - Spend some time going over the zoom setup:
     + might want to split their screen if on one monitor
     + get help via the chat, can also unmute and ask me to repeat something (encouraged to help others in the chat!)
-    + will use the non-verbal feedback. Practice giving the green yes/red no
+    + will use the non-verbal feedback (under "reactions" now). Practice giving the green yes/red no
     + share the link to the online tutorial to follow along - don't need to worry about taking notes
 
 # Getting to Know our Data and Tools 
@@ -24,16 +24,24 @@ This is a notes document to help instructors use this tutorial in an online work
 # Basic Data Cleaning with OpenRefine
 
 - Report the answer to the challenges in the zoom chat.
-- For Faceting Data - consider using breakout rooms for the challenges - poll learners to see what they want to do
-- 5 min break at the end of this section
+- 3.1 Challenge: the times are all zero - meaningless
+- For Faceting Data (3.3) - consider using breakout rooms for the challenges - poll learners to see what they want to do
+- 3.3 Challenges:
+  - Gummy Dolphins are from Country Life Brand
+  - 292 unique variables, 1 is the most frequent
+  - There are 1778 unique Brand Names 
+  - Other potentially useful facets are - duplicates facet, text length facet, and facet by blank 
+- 3.5 Challenges:
+  - metaphone3, cologne-phonetic, and Daitch-Mokotoff don't seem like they will work (too general)
+  - Should end up with about 11 variables
+- 5 min break after sorting section
 
 # Advanced OpenRefine
 
 - Consider breakout rooms for the last challenge
+- 4.2 Challenge: script for extracting database info: value.parseJson()[0]["database"]
 
 # Exporting Cleaned Data and Scripts
-
-- Discussion Q: Does anyone have a good file naming scheme they want to share?
 
 # Recommended Resources and Tutorials
 

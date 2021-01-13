@@ -7,7 +7,7 @@ documentclass: book
 output:
   bookdown::gitbook: default
   
----
+--- 
 # Welcome
 
 Got messy spreadsheets? OpenRefine is a powerful, free, open-source software tool for cleaning and transforming data in a way that is easy to reproduce. This hands-on class is targeted at people who need to clean messy data, including spreadsheets of survey responses, patient encounters, financial records, or workshop attendance. Together we will work through the basics of cleaning data in OpenRefine and also go over some more advanced techniques including pulling in additional data from an API. If you want something more powerful than Excel but don't want to spend the time to learn a programming language like R or Python, OpenRefine could be the perfect tool for you! 

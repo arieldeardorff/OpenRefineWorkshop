@@ -38,9 +38,9 @@ Now let's use faceting to find some potential mistakes:
 
 ## Trimming Whitespace and Changing to Titlecase
 
-- Some of the names in our `Brand Name` column look very similar. Before we spend a lot of time trying to manually clean or cluster all 1781 of them let’s try two easy cleaning steps.
-- First, let’s trim any whitespace at the beginning or end of the row on the `Brand Name` column by selecting `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace` – already our total number has come down to 1778
-- Next, let’s change everything to titlecase by selecting `Edit cells` > `Common transforms` > `To titlecase` – now we have 1693 options.
+- Some of the names in our `Brand Name` column look very similar. Before we spend a lot of time trying to manually clean or cluster all 1778 of them let’s try two easy cleaning steps.
+- First, let’s change everything to titlecase by selecting `Edit cells` > `Common transforms` > `To titlecase` – now we have 1693 options.
+- We might also want to trim any whitespace at the beginning or end of the row on the `Brand Name` column by selecting `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`. Note that on version 3.4 and above this will not make a difference as whitespace is automatically removed. 
 
 ## Clustering Data
 

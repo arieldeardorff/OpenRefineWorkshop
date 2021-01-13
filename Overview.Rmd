@@ -13,6 +13,8 @@ OpenRefine (formerly Google Refine) is an open-source tool for cleaning data. Wi
 
 An important thing to know about OpenRefine is that while it opens in your browser it is actually a java-based tool that is running on your computer, and therefore does not require internet access.
 
+This tutorial has been updated for OpenRefine version 3.4.
+
 ## Exploring the Data 
 
 Now let's take a look at our data. Open the spreadsheet “NewOpenRefine_Data1.csv” in excel. 
