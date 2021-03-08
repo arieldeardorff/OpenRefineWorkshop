@@ -5,6 +5,7 @@ This is the Github repository for the UCSF Library OpenRefine workshop. If you h
 
 A short [instructor guide](https://github.com/arieldeardorff/OpenRefineWorkshop/blob/master/InstructorGuide.Rmd) is also available as a markdown file.
 
+
 ----
 
 ## About the Instructor
@@ -13,3 +14,5 @@ A short [instructor guide](https://github.com/arieldeardorff/OpenRefineWorkshop/
 ----
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+---
