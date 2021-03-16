@@ -18,7 +18,6 @@ Before joining the workshop please complete the following activities:
 
 - [Download OpenRefine](http://openrefine.org/download.html)
     + For Windows machines we recommend the "Windows Kit with Embedded Java"
-    + If you are having issues please plan on showing up to class 15 minutes early for troubleshooting.
 - [Download the class data](NewOpenRefine_Data1.csv)
 
 ## Learning Objectives
