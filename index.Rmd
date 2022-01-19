@@ -18,6 +18,7 @@ Before joining the workshop please complete the following activities:
 
 - [Download OpenRefine](http://openrefine.org/download.html)
     + For Windows machines we recommend the "Windows Kit with Embedded Java"
+    + For Mac machines you will likely need to allow OpenRefine to download by going to System Preferences > Security and Privacy > General and clicking "Open Anyway" 
 - [Download the class data](NewOpenRefine_Data1.csv)
 
 ## Learning Objectives
