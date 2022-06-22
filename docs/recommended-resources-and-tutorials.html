@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Recommended Resources and Tutorials | Introduction to OpenRefine</title>
   <meta name="description" content="Chapter 6 Recommended Resources and Tutorials | Introduction to OpenRefine" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Recommended Resources and Tutorials | Introduction to OpenRefine" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Ariel Deardorff, Data Services Librarian, UCSF Library" />
 
 
-<meta name="date" content="2020-11-13" />
+<meta name="date" content="2022-06-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,9 @@
   
 <link rel="prev" href="exporting-cleaned-data-and-scripts.html"/>
 
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +51,9 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
-<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -67,19 +69,22 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Welcome</a><ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Welcome</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#pre-class-prep"><i class="fa fa-check"></i><b>1.1</b> Pre-Class Prep</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i><b>1.2</b> Learning Objectives</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#class-data"><i class="fa fa-check"></i><b>1.3</b> Class Data</a></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#about-the-instructor"><i class="fa fa-check"></i><b>1.4</b> About the Instructor</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html"><i class="fa fa-check"></i><b>2</b> Getting to Know our Data and Tools</a><ul>
+<li class="chapter" data-level="2" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html"><i class="fa fa-check"></i><b>2</b> Getting to Know our Data and Tools</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#what-is-openrefine"><i class="fa fa-check"></i><b>2.1</b> What is OpenRefine?</a></li>
 <li class="chapter" data-level="2.2" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#exploring-the-data"><i class="fa fa-check"></i><b>2.2</b> Exploring the Data</a></li>
 <li class="chapter" data-level="2.3" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#uploading-data-into-openrefine"><i class="fa fa-check"></i><b>2.3</b> Uploading Data Into OpenRefine</a></li>
 <li class="chapter" data-level="2.4" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#the-openrefine-interface"><i class="fa fa-check"></i><b>2.4</b> The OpenRefine Interface</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html"><i class="fa fa-check"></i><b>3</b> Basic Data Cleaning with OpenRefine</a><ul>
+<li class="chapter" data-level="3" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html"><i class="fa fa-check"></i><b>3</b> Basic Data Cleaning with OpenRefine</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#splitting-columns"><i class="fa fa-check"></i><b>3.1</b> Splitting Columns</a></li>
 <li class="chapter" data-level="3.2" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#undoredo"><i class="fa fa-check"></i><b>3.2</b> Undo/Redo</a></li>
 <li class="chapter" data-level="3.3" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#faceting-data"><i class="fa fa-check"></i><b>3.3</b> Faceting Data</a></li>
@@ -87,7 +92,8 @@
 <li class="chapter" data-level="3.5" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#clustering-data"><i class="fa fa-check"></i><b>3.5</b> Clustering Data</a></li>
 <li class="chapter" data-level="3.6" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#sorting"><i class="fa fa-check"></i><b>3.6</b> Sorting</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="advanced-openrefine.html"><a href="advanced-openrefine.html"><i class="fa fa-check"></i><b>4</b> Advanced OpenRefine</a><ul>
+<li class="chapter" data-level="4" data-path="advanced-openrefine.html"><a href="advanced-openrefine.html"><i class="fa fa-check"></i><b>4</b> Advanced OpenRefine</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="advanced-openrefine.html"><a href="advanced-openrefine.html#pulling-data-from-an-api"><i class="fa fa-check"></i><b>4.1</b> Pulling data from an API</a></li>
 <li class="chapter" data-level="4.2" data-path="advanced-openrefine.html"><a href="advanced-openrefine.html#extracting-the-data"><i class="fa fa-check"></i><b>4.2</b> Extracting the Data</a></li>
 </ul></li>
@@ -110,17 +116,18 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="recommended-resources-and-tutorials" class="section level1">
+<div id="recommended-resources-and-tutorials" class="section level1" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Recommended Resources and Tutorials</h1>
 <p>Here are some places to learn more about OpenRefine:</p>
 <ul>
 <li><a href="https://openrefine.org/">OpenRefine Website</a></li>
+<li><a href="https://docs.openrefine.org/">OpenRefine User Manual</a></li>
 <li><a href="https://librarycarpentry.org/lc-open-refine/">Library Carpentry - OpenRefine</a> (heavily used for the basis of this lesson)</li>
 <li><a href="https://datacarpentry.org/openrefine-socialsci/">Data Carpentry – OpenRefine for Social Science Data</a></li>
 <li><a href="https://github.com/scottythered/gratefuldata/wiki">Grateful Dead OpenRefine Tutorial</a></li>
 <li><a href="https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine#parse-json-to-get-items">Programming Historian - Fetching and Parsing Data with OpenRefine</a></li>
-<li><a href="https://github.com/OpenRefine/OpenRefine/wiki/Fetching-URLs-From-Web-Services">Fetching URLS from OpenRefine</a></li>
-<li><a href="https://github.com/OpenRefine/OpenRefine/wiki/Reconciliation">Reconciling Data with OpenRefine</a></li>
+<li><a href="https://docs.openrefine.org/manual/columnediting#add-column-by-fetching-urls">Fetching URLS from OpenRefine</a></li>
+<li><a href="https://docs.openrefine.org/manual/reconciling">Reconciling Data with OpenRefine</a></li>
 </ul>
 
 </div>
@@ -134,7 +141,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -153,6 +159,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -173,6 +180,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
