@@ -3,9 +3,10 @@
 Here are some places to learn more about OpenRefine:
 
 - [OpenRefine Website](https://openrefine.org/)
+- [OpenRefine User Manual](https://docs.openrefine.org/)
 - [Library Carpentry - OpenRefine](https://librarycarpentry.org/lc-open-refine/) (heavily used for the basis of this lesson)
 - [Data Carpentry – OpenRefine for Social Science Data](https://datacarpentry.org/openrefine-socialsci/)
 - [Grateful Dead OpenRefine Tutorial](https://github.com/scottythered/gratefuldata/wiki)
 - [Programming Historian - Fetching and Parsing Data with OpenRefine](https://programminghistorian.org/en/lessons/fetch-and-parse-data-with-openrefine#parse-json-to-get-items)
-- [Fetching URLS from OpenRefine](https://github.com/OpenRefine/OpenRefine/wiki/Fetching-URLs-From-Web-Services)
-- [Reconciling Data with OpenRefine](https://github.com/OpenRefine/OpenRefine/wiki/Reconciliation)
+- [Fetching URLS from OpenRefine](https://docs.openrefine.org/manual/columnediting#add-column-by-fetching-urls)
+- [Reconciling Data with OpenRefine](https://docs.openrefine.org/manual/reconciling)
