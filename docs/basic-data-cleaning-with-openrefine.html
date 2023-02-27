@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine</title>
   <meta name="description" content="Chapter 3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Basic Data Cleaning with OpenRefine | Introduction to OpenRefine" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Ariel Deardorff, Data Services Librarian, UCSF Library" />
 
 
-<meta name="date" content="2021-01-13" />
+<meta name="date" content="2023-02-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,9 @@
   
 <link rel="prev" href="getting-to-know-our-data-and-tools.html"/>
 <link rel="next" href="advanced-openrefine.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -65,32 +69,36 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Welcome</a><ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#pre-class-prep"><i class="fa fa-check"></i><b>1.1</b> Pre-Class Prep</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i><b>1.2</b> Learning Objectives</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#class-data"><i class="fa fa-check"></i><b>1.3</b> Class Data</a></li>
-<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#about-the-instructor"><i class="fa fa-check"></i><b>1.4</b> About the Instructor</a></li>
+<li><a href="index.html#welcome" id="toc-welcome"><span class="toc-section-number">1</span> Welcome</a>
+<ul>
+<li><a href="index.html#pre-class-prep" id="toc-pre-class-prep"><span class="toc-section-number">1.1</span> Pre-Class Prep</a></li>
+<li><a href="index.html#learning-objectives" id="toc-learning-objectives"><span class="toc-section-number">1.2</span> Learning Objectives</a></li>
+<li><a href="index.html#class-data" id="toc-class-data"><span class="toc-section-number">1.3</span> Class Data</a></li>
+<li><a href="index.html#about-the-instructor" id="toc-about-the-instructor"><span class="toc-section-number">1.4</span> About the Instructor</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html"><i class="fa fa-check"></i><b>2</b> Getting to Know our Data and Tools</a><ul>
-<li class="chapter" data-level="2.1" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#what-is-openrefine"><i class="fa fa-check"></i><b>2.1</b> What is OpenRefine?</a></li>
-<li class="chapter" data-level="2.2" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#exploring-the-data"><i class="fa fa-check"></i><b>2.2</b> Exploring the Data</a></li>
-<li class="chapter" data-level="2.3" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#uploading-data-into-openrefine"><i class="fa fa-check"></i><b>2.3</b> Uploading Data Into OpenRefine</a></li>
-<li class="chapter" data-level="2.4" data-path="getting-to-know-our-data-and-tools.html"><a href="getting-to-know-our-data-and-tools.html#the-openrefine-interface"><i class="fa fa-check"></i><b>2.4</b> The OpenRefine Interface</a></li>
+<li><a href="getting-to-know-our-data-and-tools.html#getting-to-know-our-data-and-tools" id="toc-getting-to-know-our-data-and-tools"><span class="toc-section-number">2</span> Getting to Know our Data and Tools</a>
+<ul>
+<li><a href="getting-to-know-our-data-and-tools.html#what-is-openrefine" id="toc-what-is-openrefine"><span class="toc-section-number">2.1</span> What is OpenRefine?</a></li>
+<li><a href="getting-to-know-our-data-and-tools.html#exploring-the-data" id="toc-exploring-the-data"><span class="toc-section-number">2.2</span> Exploring the Data</a></li>
+<li><a href="getting-to-know-our-data-and-tools.html#uploading-data-into-openrefine" id="toc-uploading-data-into-openrefine"><span class="toc-section-number">2.3</span> Uploading Data Into OpenRefine</a></li>
+<li><a href="getting-to-know-our-data-and-tools.html#the-openrefine-interface" id="toc-the-openrefine-interface"><span class="toc-section-number">2.4</span> The OpenRefine Interface</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html"><i class="fa fa-check"></i><b>3</b> Basic Data Cleaning with OpenRefine</a><ul>
-<li class="chapter" data-level="3.1" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#splitting-columns"><i class="fa fa-check"></i><b>3.1</b> Splitting Columns</a></li>
-<li class="chapter" data-level="3.2" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#undoredo"><i class="fa fa-check"></i><b>3.2</b> Undo/Redo</a></li>
-<li class="chapter" data-level="3.3" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#faceting-data"><i class="fa fa-check"></i><b>3.3</b> Faceting Data</a></li>
-<li class="chapter" data-level="3.4" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#trimming-whitespace-and-changing-to-titlecase"><i class="fa fa-check"></i><b>3.4</b> Trimming Whitespace and Changing to Titlecase</a></li>
-<li class="chapter" data-level="3.5" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#clustering-data"><i class="fa fa-check"></i><b>3.5</b> Clustering Data</a></li>
-<li class="chapter" data-level="3.6" data-path="basic-data-cleaning-with-openrefine.html"><a href="basic-data-cleaning-with-openrefine.html#sorting"><i class="fa fa-check"></i><b>3.6</b> Sorting</a></li>
+<li><a href="basic-data-cleaning-with-openrefine.html#basic-data-cleaning-with-openrefine" id="toc-basic-data-cleaning-with-openrefine"><span class="toc-section-number">3</span> Basic Data Cleaning with OpenRefine</a>
+<ul>
+<li><a href="basic-data-cleaning-with-openrefine.html#splitting-columns" id="toc-splitting-columns"><span class="toc-section-number">3.1</span> Splitting Columns</a></li>
+<li><a href="basic-data-cleaning-with-openrefine.html#undoredo" id="toc-undoredo"><span class="toc-section-number">3.2</span> Undo/Redo</a></li>
+<li><a href="basic-data-cleaning-with-openrefine.html#faceting-data" id="toc-faceting-data"><span class="toc-section-number">3.3</span> Faceting Data</a></li>
+<li><a href="basic-data-cleaning-with-openrefine.html#trimming-whitespace-and-changing-to-titlecase" id="toc-trimming-whitespace-and-changing-to-titlecase"><span class="toc-section-number">3.4</span> Trimming Whitespace and Changing to Titlecase</a></li>
+<li><a href="basic-data-cleaning-with-openrefine.html#clustering-data" id="toc-clustering-data"><span class="toc-section-number">3.5</span> Clustering Data</a></li>
+<li><a href="basic-data-cleaning-with-openrefine.html#sorting" id="toc-sorting"><span class="toc-section-number">3.6</span> Sorting</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="advanced-openrefine.html"><a href="advanced-openrefine.html"><i class="fa fa-check"></i><b>4</b> Advanced OpenRefine</a><ul>
-<li class="chapter" data-level="4.1" data-path="advanced-openrefine.html"><a href="advanced-openrefine.html#pulling-data-from-an-api"><i class="fa fa-check"></i><b>4.1</b> Pulling data from an API</a></li>
-<li class="chapter" data-level="4.2" data-path="advanced-openrefine.html"><a href="advanced-openrefine.html#extracting-the-data"><i class="fa fa-check"></i><b>4.2</b> Extracting the Data</a></li>
+<li><a href="advanced-openrefine.html#advanced-openrefine" id="toc-advanced-openrefine"><span class="toc-section-number">4</span> Advanced OpenRefine</a>
+<ul>
+<li><a href="advanced-openrefine.html#pulling-data-from-an-api" id="toc-pulling-data-from-an-api"><span class="toc-section-number">4.1</span> Pulling data from an API</a></li>
+<li><a href="advanced-openrefine.html#extracting-the-data" id="toc-extracting-the-data"><span class="toc-section-number">4.2</span> Extracting the Data</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="exporting-cleaned-data-and-scripts.html"><a href="exporting-cleaned-data-and-scripts.html"><i class="fa fa-check"></i><b>5</b> Exporting Cleaned Data and Scripts</a></li>
-<li class="chapter" data-level="6" data-path="recommended-resources-and-tutorials.html"><a href="recommended-resources-and-tutorials.html"><i class="fa fa-check"></i><b>6</b> Recommended Resources and Tutorials</a></li>
+<li><a href="exporting-cleaned-data-and-scripts.html#exporting-cleaned-data-and-scripts" id="toc-exporting-cleaned-data-and-scripts"><span class="toc-section-number">5</span> Exporting Cleaned Data and Scripts</a></li>
+<li><a href="recommended-resources-and-tutorials.html#recommended-resources-and-tutorials" id="toc-recommended-resources-and-tutorials"><span class="toc-section-number">6</span> Recommended Resources and Tutorials</a></li>
 </ul>
 
       </nav>
@@ -108,14 +116,14 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="basic-data-cleaning-with-openrefine" class="section level1">
+<div id="basic-data-cleaning-with-openrefine" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Basic Data Cleaning with OpenRefine</h1>
-<p>Let's dive into our data with some basic exploration and cleaning.</p>
-<div id="splitting-columns" class="section level2">
+<p>Let’s dive into our data with some basic exploration and cleaning.</p>
+<div id="splitting-columns" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Splitting Columns</h2>
 <p>Sometimes you have more than one data point in a column and need to separate it out so you can analyze it separately (similar to the <code>Text to columns</code> operations in Excel)</p>
 <ul>
-<li>Let's split <code>Serving Size</code> into two columns – one for the amount and one for the unit
+<li>Let’s split <code>Serving Size</code> into two columns – one for the amount and one for the unit
 <ul>
 <li>Using the drop-down menu select <code>Edit Column</code> &gt; <code>Split into several Columns</code> - by separator (change to a blank space) &gt; <code>split into 2 columns at most</code> &gt; uncheck <code>remove this column</code></li>
 </ul></li>
@@ -123,27 +131,27 @@
 <li><strong>Challenge</strong>: Use the <code>split</code> feature to divide the <code>Date Entered into DSLD column</code> into two columns, one for date and one for time. Can we conclude anything about the times?</li>
 </ul>
 </div>
-<div id="undoredo" class="section level2">
+<div id="undoredo" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Undo/Redo</h2>
 <p>When we make a mistake in OpenRefine, we use <code>Undo/Redo</code> rather than a back button.</p>
 <ul>
 <li>Let’s say we didn’t actually want to split <code>Date Entered into DSLD</code> into two columns. Click on <code>Undo/Redo</code> and select the action <strong>before</strong> the one we just did. Our split has now disappeared.</li>
 </ul>
 </div>
-<div id="faceting-data" class="section level2">
+<div id="faceting-data" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Faceting Data</h2>
 <p>Faceting is one of the best parts of OpenRefine and can be used in a variety of ways including to get a snapshot of unique variables and to spot potential errors in your data.</p>
-<p>Let's facet to get a snapshot of our data:</p>
+<p>Let’s facet to get a snapshot of our data:</p>
 <ul>
 <li>We can scroll down to see if our splits have worked correctly but it is always smart to double check with a facet. Let’s get a snapshot of our new <code>Serving Unit</code> column by selecting <code>Facet</code> &gt; <code>Text facet</code></li>
 <li>On the left we can now see a list of all the different values in this column in alphabetical order or by count. There should be 433 choices. If we click on any of the options we will filter to just those rows.
 <ul>
 <li>Some of the <code>Serving Units</code> look a little odd, but they were actually provided that way by the manufacturer so we will leave them for now.</li>
 </ul></li>
-<li><strong>Challenge</strong>: What Brand makes a supplement that comes in the form of &quot;Gummy Dolphin(s)&quot;?</li>
+<li><strong>Challenge</strong>: What Brand makes a supplement that comes in the form of “Gummy Dolphin(s)”?</li>
 <li><strong>Challenge</strong>: Use the <code>Facet</code> feature on the <code>Serving Amount</code> column. How many unique variables are there? What is the most frequent serving amount?</li>
 </ul>
-<p>Now let's use faceting to find some potential mistakes:</p>
+<p>Now let’s use faceting to find some potential mistakes:</p>
 <ul>
 <li>Now let’s try faceting the <code>LanguaL-Product Type</code> column. It looks like we have 14 choices but some of these look a little odd. For example, it looks like we have 25 records for <code>Amino acid/protein [A1305</code> and 2325 records for <code>Amino acid/protein [A1305]</code>. In this case we know that those 25 records should say <code>[A1305]</code>.To fix this, we can click <code>Edit</code> next to those records, update the records, and select <code>Apply</code>. No we have 13 choices</li>
 <li>It looks like there are a couple more spelling mistakes in this column, we could fix them manually as we did above, but let’s hold off and use the clustering feature later.</li>
@@ -151,15 +159,16 @@
 <li><strong>Challenge</strong>: Explore the other kinds of facets, do any of these seem useful to you?</li>
 </ul>
 </div>
-<div id="trimming-whitespace-and-changing-to-titlecase" class="section level2">
+<div id="trimming-whitespace-and-changing-to-titlecase" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Trimming Whitespace and Changing to Titlecase</h2>
 <ul>
 <li>Some of the names in our <code>Brand Name</code> column look very similar. Before we spend a lot of time trying to manually clean or cluster all 1778 of them let’s try two easy cleaning steps.</li>
 <li>First, let’s change everything to titlecase by selecting <code>Edit cells</code> &gt; <code>Common transforms</code> &gt; <code>To titlecase</code> – now we have 1693 options.</li>
 <li>We might also want to trim any whitespace at the beginning or end of the row on the <code>Brand Name</code> column by selecting <code>Edit cells</code> &gt; <code>Common transforms</code> &gt; <code>Trim leading and trailing whitespace</code>. Note that on version 3.4 and above this will not make a difference as whitespace is automatically removed.</li>
+<li>Note that you can now apply these actions to all columns at once using <code>All</code> &gt; <code>Edit all Columns</code></li>
 </ul>
 </div>
-<div id="clustering-data" class="section level2">
+<div id="clustering-data" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> Clustering Data</h2>
 <p>Now let’s clean up the rest of our <code>Brand Name</code> column using Clustering! Clustering is one of the most powerful features in OpenRefine! Clustering is a tool for grouping names that are similar so that we can bulk edit them – it works on the syntactic level (spelling) not semantic (meaning)</p>
 <ul>
@@ -171,10 +180,7 @@
 </ul></li>
 <li>Fortunately, we don’t really need to understand the algorithms because it is easy to try them all!</li>
 </ul>
-<div class="figure">
-<img src="images/OpenRefine_Cluster.png" />
-
-</div>
+<p><img src="images/OpenRefine_Cluster.png" /></p>
 <ul>
 <li>In the clustering box we can see:
 <ul>
@@ -193,14 +199,14 @@
 <li><strong>Challenge</strong>: <code>Facet</code> and <code>Cluster</code> the <code>LanguaL-Product Type</code> column. How many unique variables do you end up with?</li>
 </ul>
 </div>
-<div id="sorting" class="section level2">
+<div id="sorting" class="section level2" number="3.6">
 <h2><span class="header-section-number">3.6</span> Sorting</h2>
 <ul>
 <li>Right now the data is sorted by <code>Brand Name</code> first, what if we wanted to sort by <code>DSLD ID</code>?</li>
 <li>Under <code>DSLD ID</code> select <code>Sort</code> and we want to sort by <code>numbers</code>. Note that we can position errors and blanks at the beginning to help us spot them if we want. Hit <code>Ok</code> when you are happy with your sort.
 <ul>
 <li>You can edit your sort by selecting <code>Sort</code> again under the specific column. You can also select <code>Sort</code> &gt; <code>Reverse</code> or <code>Remove sort</code> to undo (since it is not listed in the <code>Undo/redo</code> column).</li>
-<li>Note that this didn't add any steps to the <code>Undo/Redo</code> - the sort is not permanent</li>
+<li>Note that this didn’t add any steps to the <code>Undo/Redo</code> - the sort is not permanent</li>
 <li>If we wanted it to be permanent we would select <code>Sort</code> in the top middle &gt; <code>Reorder rows permanently</code></li>
 </ul></li>
 <li>We can sort by multiple things, just sort each row in the order you want them sorted (view the order in the sort menu) ex: sort <code>DSLD ID</code> then <code>Brand Name</code></li>
@@ -218,7 +224,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -237,6 +242,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -257,6 +263,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
